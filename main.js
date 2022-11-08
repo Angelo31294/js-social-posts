@@ -150,4 +150,10 @@ for(let i = 0; i < posts.length; i++){
 
 console.log(postsContainer)
 // Milestone 2 - Se clicchiamo sul tasto "Mi Piace" cambiamo il colore al testo del bottone e incrementiamo il counter dei likes relativo.
+
+const button = document.querySelector('.js-like-button');
+
+addEventListener ('click', function() {
+    button.classList.add('like-button--liked')
+});
 // Salviamo in un secondo array gli id dei post ai quali abbiamo messo il like.
